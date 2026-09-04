@@ -1,0 +1,2 @@
+Upload your SIH 2026 brochure PDF and PPT template into this folder.
+Then update their filenames in ../config.js under the downloads section.

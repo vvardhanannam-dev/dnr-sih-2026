@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- PAGE SETTINGS: title, description, mobile scaling and browser color -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#08010f" />
+  <meta name="description" content="Smart India Internal Hackathon 2026 at D.N.R. College of Engineering & Technology." />
+  <title>SIH 2026 | DNR College</title>
+  <!-- WEBSITE FONTS: replace this Google Fonts URL to change fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <!-- MAIN DESIGN FILE -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- LOADING EFFECT: timing is controlled at the bottom of app.js -->
+  <div class="loader" id="loader" aria-label="Loading SIH 2026">
+    <div class="loader-mark"><span></span><span></span></div>
+    <p>CREATING WHAT'S NEXT</p>
+    <div class="loader-line"><i></i></div>
+  </div>
+
+  <!-- ANIMATED BACKGROUND -->
+  <canvas id="stars" aria-hidden="true"></canvas>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+
+  <!-- TOP DASHBOARD / NAVIGATION -->
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="SIH 2026 home">
+      <img class="spark-logo" src="assets/sih-spark-logo.png" alt="SIH innovation logo" /><span data-bind="event.shortName">SIH 2026</span>
+    </a>
+    <!-- MOBILE MENU BUTTON -->
+    <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+    <nav id="nav">
+      <!-- DASHBOARD LINKS: URLs are controlled from config.js → links -->
+      <a class="external-link" data-link="aboutSih" href="#">About SIH ↗</a>
+      <a class="external-link" data-link="problemStatements" href="#">Problem Statements ↗</a>
+      <!-- PAGE SECTION LINKS -->
+      <a href="#ppt">PPT Format</a><a href="#join">Join</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO: college banner, SIH title, primary buttons, date and venue -->
+    <section class="hero" id="home">
+      <div class="hero-grid"></div>
+      <div class="hero-content reveal">
+        <img class="college-banner" src="assets/dnr-logo.png" alt="D.N.R. College of Engineering & Technology" />
+        <div class="signal"><span></span><i></i><span></span></div>
+        <h1 class="shake-title"><span data-bind="event.title">SMART INDIA INTERNAL HACKATHON</span><strong data-bind="event.year">2026</strong></h1>
+        <p class="hero-sub college-under-title" data-bind="event.college">D.N.R. COLLEGE OF ENGINEERING & TECHNOLOGY</p>
+        <div class="hero-actions">
+          <a class="btn btn-outline download-link" data-download="brochure">VIEW SIH 2026 BROCHURE <span>↓</span></a>
+          <a class="btn btn-primary external-link" data-link="register">REGISTER NOW <span>↗</span></a>
+        </div>
+        <!-- DATE under Brochure; VENUE under Register. Text comes from config.js -->
+        <div class="event-meta action-meta">
+          <span class="date-meta">◆ <b data-bind="event.date"></b></span>
+          <span class="venue-meta">⌖ <b data-bind="event.venue"></b></span>
+        </div>
+      </div>
+      <a class="scroll-cue" href="#ppt"><span></span>EXPLORE</a>
+    </section>
+
+    <!-- PPT DOWNLOAD SECTION -->
+    <section class="section ppt-section" id="ppt">
+      <div class="ppt-card reveal">
+        <div class="ppt-icon"><span>P</span></div>
+        <div><p class="eyebrow">OFFICIAL PRESENTATION FORMAT</p><h2>DOWNLOAD THE <em>PPT TEMPLATE</em></h2><p>Use the prescribed format for your idea submission. Replace the sample content with your team details and solution.</p></div>
+        <a class="btn btn-primary download-link" data-download="pptTemplate">DOWNLOAD .PPTX <span>↓</span></a>
+      </div>
+    </section>
+
+    <!-- CONNECT / QUICK LINKS SECTION -->
+    <section class="section join" id="join">
+      <div class="section-tag">01 / CONNECT</div>
+      <div class="section-head reveal"><p>READY TO TURN YOUR IDEA INTO IMPACT?</p><h2>JOIN THE <em>INNOVATION</em></h2></div>
+      <div class="links-grid" id="quickLinks"></div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+<footer>
+  <span>SIH 2026</span>
+
+  <div class="footer-center">
+    <p>Hosted by <b>D.N.R. College of Engineering & Technology</b></p>
+    <p class="dev-credit">designed & developed by IT students</p>
+  </div>
+
+  <a href="#home">BACK TO TOP ↑</a>
+</footer>
+  <!-- ERROR/HELP MESSAGE shown when a manual link or file is missing -->
+  <div class="toast" id="toast" role="status"></div>
+
+  <!-- SCRIPT ORDER: config.js must load before app.js -->
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
