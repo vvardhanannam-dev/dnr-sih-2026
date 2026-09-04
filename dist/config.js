@@ -68,6 +68,9 @@ window.SIH_CONFIG = {
   quickLinks: [
     { label: "Join WhatsApp Group", urlKey: "whatsapp", icon: "whatsapp" },
     { label: "Register Your Team", urlKey: "register", icon: "arrow" },
-    { label: "Official SIH Website", urlKey: "sihOfficial", icon: "external" }
-  ]
+    {
+  label: "SIH Problem Statements",
+  urlKey: "problemStatements",
+  icon: "external"
+} ]
 };
