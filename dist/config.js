@@ -66,11 +66,20 @@ window.SIH_CONFIG = {
 
   // QUICK-LINK CARDS: urlKey must match a key in the links section above.
   quickLinks: [
-    { label: "Join WhatsApp Group", urlKey: "whatsapp", icon: "whatsapp" },
-    { label: "Register Now", urlKey: "register", icon: "arrow" },
-    {
-  label: "SIH Problem Statements",
-  urlKey: "problemStatements",
-  icon: "external"
-} ]
+  {
+    label: "Join WhatsApp Group",
+    urlKey: "whatsapp",
+    icon: "whatsapp"
+  },
+  {
+    label: "SIH Official Website",
+    urlKey: "sihOfficial",
+    icon: "external"
+  },
+  {
+    label: "SIH Problem Statements",
+    urlKey: "problemStatements",
+    icon: "problem"
+  }
+]
 };

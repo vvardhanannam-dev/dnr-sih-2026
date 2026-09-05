@@ -14,9 +14,9 @@ document.querySelectorAll('[data-bind]').forEach(el => {
 const cardIcons = {
   whatsapp: '<img src="assets/whatsapp-logo.png" alt="WhatsApp" />',
   external: '<img src="assets/sih-official-logo.png" alt="Official SIH website" />',
+    problem: '<img src="assets/problem-statements.png" alt="SIH Problem Statements" />'
   // Register Your Team card icon (functional dashboard icon).
-  arrow: '<svg class="register-icon" viewBox="0 0 64 64" aria-label="Register your team" role="img"><circle cx="25" cy="20" r="10"/><path d="M8 49c2-11 9-17 17-17s15 6 17 17"/><path d="M48 26v18M39 35h18"/></svg>'
-};
+  };
 // QUICK-LINK CARD BUILDER: creates the bottom cards from config.js.
 document.getElementById('quickLinks').innerHTML = config.quickLinks.map(item => `
   <a class="quick-link external-link reveal" data-link="${item.urlKey}" href="#">
