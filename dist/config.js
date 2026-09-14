@@ -17,7 +17,7 @@ window.SIH_CONFIG = {
     // Edit only the text inside quotes. Example: "15 & 16 October 2026"
     // The updated date appears automatically on the main website.
     // =========================================================
-    date: "15-09-2026 & 16-09-2026",
+    date: "21-09-2026 & 22-09-2026",
     // CHANGE VENUE HERE: shown below and slightly right of Register Now.
     venue: "DNR College Campus, Bhimavaram"
   },
